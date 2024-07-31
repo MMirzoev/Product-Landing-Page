@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+}
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 5px;
+  margin-top: 0;
+  background-color: rgb(49, 35, 35);
+  color: white;
+}
+
+.nav-link a {
+  color: white;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#header-img {
+  width: 7%;
+}
+
+#nav-bar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#description {
+  height: 580px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(212, 185, 185);
+}
+#description img {
+  margin-top: -15%;
+  height: 90%;
+}
+.desc {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 50px;
+}
+h1,
+p {
+  margin-top: 15px;
+}
+#benefits {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(243, 234, 231);
+}
+
+#benefits li {
+  margin-top: 12px;
+  font-size: 22px;
+  color: rgb(44, 42, 42);
+}
+#use {
+  padding-right: 50px;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+  background-color: rgb(203, 221, 250);
+}
+#use p {
+  line-height: 30px;
+  font-size: 22px;
+  color: rgb(44, 42, 42);
+}
+#pricing {
+  margin-top: 25px;
+  width: 100%;
+  justify-items: center;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  height: 100%;
+  background-color: rgb(246, 244, 244);
+  border: 2px outset rgb(238, 234, 234);
+  border-radius: 10px;
+}
+
+.offer-pr,
+.price {
+  text-align: center;
+  font-size: 22px;
+  color: rgb(46, 44, 44);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.offer img {
+  width: 80%;
+  border: 1px solid rgb(231, 224, 224);
+  border-radius: 10px;
+}
+#form {
+  margin-top: 25px;
+  text-align: center;
+}
+.form-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+hr {
+  margin-top: 50px;
+  width: 800px;
+  border-bottom: 1px solid rgb(255, 231, 131);
+  border-radius: 80%;
+}
+
+#email {
+  width: 40%;
+  height: 30px;
+  text-indent: 5px;
+}
+
+#submit {
+  width: 20%;
+  height: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(29, 27, 27);
+  border-radius: 3px;
+  border: 2px solid rgb(27, 26, 26);
+}
+#submit:hover {
+  width: 21%;
+  height: 31px;
+  font-size: 20px;
+}
+.disclaimer {
+  color: red;
+  margin: 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  color: rgb(240, 233, 233);
+  background-color: rgb(39, 39, 39);
+}
+footer ul {
+  display: flex;
+  margin-top: 15px;
+}
+footer a,
+.copyright {
+  color: rgb(240, 233, 233);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 15px;
+}
+
+/*media queries*/
+@media screen and (max-width: 1067px) {
+  #header {
+    position: fixed;
+  }
+  .nav-link a {
+    font-size: 16px;
+  }
+  #header-img {
+    width: 10%;
+  }
+  #nav-bar ul,
+  #description,
+  #benefits,
+  #use,
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    height: fit-content;
+    gap: 0;
+  }
+  #pricing {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  iframe {
+    min-height: 300px;
+  }
+  .container {
+    width: 100vw;
+    margin-top: 80px;
+  }
+
+  #description img {
+    display: none;
+  }
+  .desc {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 0;
+  }
+  h1,
+  p {
+    margin-top: 10px;
+  }
+
+  #benefits li {
+    line-height: normal;
+    font-size: 16px;
+  }
+
+  #use p {
+    line-height: normal;
+    font-size: 16px;
+  }
+  .offer {
+    margin: 5px auto;
+  }
+  .offer-pr,
+  .price {
+    font-size: 18px;
+  }
+
+  .form-text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  hr {
+    margin-top: 25px;
+    width: 80%;
+  }
+
+  #email {
+    text-indent: 3px;
+  }
+
+  #submit {
+    font-size: 16px;
+  }
+  footer {
+    height: fit-content;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+}
